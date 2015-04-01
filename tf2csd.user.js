@@ -26,7 +26,7 @@ function detectScrubs() {
  
 GM_xmlhttpRequest({
         method: 'GET',
-        url: '',
+        url: 'http://raw.githubusercontent.com/Yttrium-tYcLief/ScrubDetector/master/scrublist',
         onload: function(response) {
                 actualScrubs = response.responseText.split('\n');
                 setInterval(detectScrubs, 2500);
